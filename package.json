@@ -1,0 +1,16 @@
+{
+  "name": "luber-qa-playwright",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pruebas de navegador frontend y ciberseguridad para Luber Colombia",
+  "scripts": {
+    "test:qa": "node scripts/run-qa.mjs",
+    "test:front": "node scripts/run-qa.mjs tests/qa-smoke.spec.js tests/qa-extended.spec.js",
+    "test:security": "node scripts/run-qa.mjs tests/security.spec.js",
+    "test:qa:headed": "node scripts/run-qa.mjs --headed",
+    "test:qa:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}
